@@ -6,7 +6,7 @@ BLUE="\e[34;1m"
 YELLOW="\e[33;1m"
 RESET="\e[0m"
 
-MPATH="/storage/B057-0E1D"
+MPATH="/sdcard"
 
 function get-stream() {
   termux-media-scan -r -v $MPATH \

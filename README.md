@@ -20,10 +20,10 @@ A lightweight, interactive command-line music player for Android via [Termux](ht
 
 | App | Source | Purpose |
 |-----|--------|---------|
-| [Termux](https://f-droid.org/packages/com.termux/) | F-Droid | Terminal emulator |
-| [Termux:API](https://f-droid.org/packages/com.termux.api/) | F-Droid | Android API bridge (notifications, dialogs, media) |
+| [Termux](https://github.com/termux/termux-app/releases) | Github release page | Terminal emulator |
+| [Termux:API](https://github.com/termux/termux-api/releases) | Github release page | Android API bridge (notifications, dialogs, media) |
 
-> ⚠️ **Install both from F-Droid.** The Play Store versions are outdated and may not work correctly together.
+> ⚠️ **Install both from Github.** The Play Store versions are outdated and may not work correctly together.
 
 ---
 
@@ -43,17 +43,13 @@ pkg install jq
 
 ## ⚙️ Configuration
 
-Open the script and update `MPATH` to match your SD card mount point:
+Open the script and update `MPATH` to match your SD card if your music is stored on the SD card. If your music is in internal storage, you can leave it as `/sdcard`:
 
 ```bash
-MPATH="/storage/B057-0E1D"
+MPATH="/sdcard"
 ```
 
-To find your SD card path, run:
-
-```bash
-ls /storage/
-```
+> Root path where your music is stored. Common paths include `/sdcard`, `/storage/emulated/0`, or `/storage/XXXX-XXXX` (where `XXXX-XXXX` is your SD card's unique ID).
 
 Use the alphanumeric folder that isn't `emulated` — that's your SD card.
 
