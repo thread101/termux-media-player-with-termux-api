@@ -64,6 +64,8 @@ chmod +x player.sh
 bash player.sh
 ```
 
+[YouTube](https://youtube.com/shorts/6uv1NdQaKTI?feature=share)
+
 On launch, the script will:
 
 1. Scan `$MPATH` recursively for `.mp3` files
