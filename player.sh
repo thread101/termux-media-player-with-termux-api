@@ -23,7 +23,7 @@ function set-stream() {
 
 function notification() {
   termux-notification -t "media player" \
-    --content $text \
+    --content "$text" \
     --id 200 \
     --alert-once \
     --on-delete "termux-media-player stop" \
